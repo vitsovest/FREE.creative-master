@@ -102,6 +102,14 @@ header {
   margin-top: 20px;
 }
 
+.contact_email button {
+  border-radius: 1rem;
+}
+.contact_email input {
+  border-radius: 0.5rem;
+  border-color: black;
+}
+
 .step_style h3 {
   font-size: 18px;
   line-height: 25px;
