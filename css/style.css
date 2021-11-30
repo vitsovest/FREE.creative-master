@@ -110,6 +110,9 @@ header {
   border-color: black;
 }
 
+.step_style h2 {
+  margin-bottom: 83px;
+}
 .step_style h3 {
   font-size: 18px;
   line-height: 25px;
@@ -117,6 +120,30 @@ header {
 .step_style p {
   font-size: 15px;
   line-height: 19px;
+}
+.step_style img {
+  margin-bottom: 10px;
+}
+
+.g_banner {
+  position: relative;
+}
+.g_banner .g_text_banner {
+  padding-top: 282px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.g_banner .banner {
+  height: 100vh;
+  background-position: center top;
+  background-size: cover;
+  background-image: url("../images/Rectangle32.jpg");
+}
+.g_banner h1 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -119,6 +119,9 @@ header{
   }
 }
 .step_style{
+  h2{
+    margin-bottom: 83px;
+  }
   h3{
     font-size: 18px;
     line-height: 25px;
@@ -127,4 +130,29 @@ header{
     font-size: 15px;
     line-height: 19px;
   }
+  img{
+    margin-bottom: 10px;
+  }
+}
+
+.g_banner{
+  position: relative;
+  .g_text_banner{
+    padding-top: 282px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  .banner{
+    height: 100vh;
+    background-position: center top;
+    background-size: cover;
+    background-image: url("../images/Rectangle32.jpg");
+  }
+  h1{
+    color: white;
+  }
+
 }
