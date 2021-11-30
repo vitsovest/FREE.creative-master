@@ -72,8 +72,7 @@ header{
   }
   p{
     line-height: 25px;
-
-    /*padding-top: 27px;*/
+    padding-top: 27px;
   }
   span{
     color: #181818;
@@ -137,14 +136,14 @@ header{
 
 .g_banner{
   position: relative;
-  .g_text_banner{
-    padding-top: 282px;
+  /*.g_text_banner{
+    /*padding-top: 282px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 282px;
+    left: 285px;
     width: 100%;
     z-index: 3;
-  }
+  }*/
   .banner{
     height: 100vh;
     background-position: center top;
@@ -152,6 +151,16 @@ header{
     background-image: url("../images/Rectangle32.jpg");
   }
   h1{
+    color: white;
+  }
+  .container{
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 282px;
+    /*left: 285px;*/
+    z-index: 3;
+    width: 100%;
     color: white;
   }
 
