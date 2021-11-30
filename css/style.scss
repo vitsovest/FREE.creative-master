@@ -158,10 +158,19 @@ header{
     display: block;
     margin: auto;
     top: 282px;
-    /*left: 285px;*/
+    left: 285px;
     z-index: 3;
     width: 100%;
     color: white;
   }
-
+  span{
+    color: #181818;
+    font-size: 55px;
+    line-height: 55px;
+    color: white;
+  }
+  p{
+    line-height: 25px;
+    padding-top: 27px;
+  }
 }
