@@ -109,6 +109,11 @@ header i {
   font-size: 55px;
   line-height: 55px;
 }
+.fm_style a {
+  font-size: 18px !important;
+  line-height: 25px !important;
+  color: white !important;
+}
 
 .name_logo h3 {
   font-size: 55px;
