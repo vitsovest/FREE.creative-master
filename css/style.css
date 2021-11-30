@@ -6,6 +6,32 @@ header {
   left: 0;
   top: 0;
   z-index: 3;
+  color: white;
+}
+header p {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 19px;
+}
+header .phone {
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 7px 27px 7px 33px;
+}
+header .fab {
+  text-decoration: none;
+  color: white;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+header i {
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  padding-top: 10px;
+  margin-left: 20px;
 }
 
 .main_banner .text_banner {
@@ -32,6 +58,12 @@ header {
 }
 .main_banner .banner_4 {
   background-image: url("../images/014.jpg");
+}
+.main_banner .btn {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border: none;
 }
 
 .fm_style {
@@ -76,6 +108,21 @@ header {
   color: #181818;
   font-size: 55px;
   line-height: 55px;
+}
+
+.name_logo h3 {
+  font-size: 55px;
+  line-height: 55px;
+}
+.name_logo span {
+  font-size: 55px;
+  line-height: 55px;
+}
+.name_logo p {
+  line-height: 25px;
+  padding-top: 27px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .portfolio article {
@@ -125,6 +172,10 @@ header {
   margin-bottom: 10px;
 }
 
+.guarantee {
+  alignment: center;
+}
+
 .g_banner {
   position: relative;
   /*.g_text_banner{
@@ -164,6 +215,13 @@ header {
 .g_banner p {
   line-height: 25px;
   padding-top: 27px;
+}
+
+footer .portfolio {
+  background-color: #2B59C3;
+  display: block;
+  text-align: left;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
