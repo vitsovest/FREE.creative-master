@@ -1,5 +1,18 @@
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
+@font-face {
+  font-family: "20 Kopeek";
+  src: url("../fonts/20Kopeek.eot");
+  src: url("../fonts/20Kopeek.eot?#iefix") format("embedded-opentype"), url("../fonts/20Kopeek.woff2") format("woff2"), url("../fonts/20Kopeek.woff") format("woff"), url("../fonts/20Kopeek.ttf") format("truetype"), url("../fonts/20Kopeek.svg#20Kopeek") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "20 Kopeek";
+  font-weight: normal;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -211,6 +224,10 @@ header i {
   width: 100%;
   color: white;
 }
+.g_banner .leave_order {
+  border-radius: 40px;
+  height: 71px;
+}
 .g_banner span {
   color: #181818;
   font-size: 55px;
@@ -222,11 +239,98 @@ header i {
   padding-top: 27px;
 }
 
-footer .portfolio {
+footer .row {
+  /*font size for blue blocks and copyright*/
+  font-size: 18px;
+  line-height: 25px;
+  /*END font size for blue blocks and copyright*/
+  /*paragraph "we are on media*/
+  /*.portfolio{
+    font-size: 18px;
+    line-height: 25px;
+    @media screen and (max-width: 992px){
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @media screen and (max-width: 768px){
+      margin-top: 28px;
+    }
+    @media screen and (max-width: 576px){
+      font-size: 15px;
+      line-height: 21px;
+    }*/
+}
+@media screen and (max-width: 992px) {
+  footer .row {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .row {
+    margin-top: 28px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .row {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+footer .row .portfolio {
   background-color: #2B59C3;
   display: block;
   text-align: left;
   color: white;
+}
+footer .row .portfolio:first-child {
+  padding-left: 13px;
+  padding-top: 6px;
+}
+footer .row .portfolio:nth-child(2) {
+  padding-left: 8px;
+  padding-top: 6px;
+}
+footer .row:first-child {
+  font-size: 34px;
+  line-height: 37px;
+  margin-bottom: 31px;
+  margin-top: 120px;
+}
+@media screen and (max-width: 360px) {
+  footer .row:first-child {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+footer .copyright {
+  margin-top: 38px;
+  font-size: 18px;
+  line-height: 25px;
+}
+@media screen and (max-width: 992px) {
+  footer .copyright {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .copyright {
+    margin-top: 28px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .copyright {
+    margin-top: 45px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer .copyright {
+    margin-top: 36px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
