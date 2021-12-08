@@ -30,12 +30,19 @@ header .phone {
   border: solid 1px white;
   border-radius: 10px;
   padding: 7px 27px 7px 33px;
+  display: inline-block;
+}
+header .phone:hover {
+  transform: scale(1.1);
 }
 header .fab {
   text-decoration: none;
   color: white;
   border: solid 1px white;
   border-radius: 50%;
+}
+header .fab:hover {
+  transform: scale(1.1);
 }
 header i {
   width: 36px;
@@ -77,6 +84,9 @@ header i {
   color: black;
   border-radius: 20px;
   border: none;
+}
+.main_banner .btn:hover {
+  transform: scale(1.1);
 }
 
 .fm_style {
@@ -192,10 +202,15 @@ header i {
 
 .guarantee {
   alignment: center;
+  background-image: url("../images/Rectangle32.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .g_banner {
   position: relative;
+  padding-top: 282px;
+  padding-left: 285px;
   /*.g_text_banner{
     /*padding-top: 282px;
     position: absolute;
@@ -206,10 +221,8 @@ header i {
   }*/
 }
 .g_banner .banner {
-  height: 100vh;
-  background-position: center top;
-  background-size: cover;
-  background-image: url("../images/Rectangle32.jpg");
+  /*background-size: cover;
+  background-image: url("../images/Rectangle32.jpg");*/
 }
 .g_banner h1 {
   color: white;
