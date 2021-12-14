@@ -259,6 +259,11 @@ header{
     @include max-screen(992px){         //disable underline from this resolution
       border-bottom: none;
     }
+    &.border_blue{                      //blue border about central vertical block
+      border: solid 4px #2B59C3;
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+    }
     h3{
       color: #868686;
       font-size: 38px;
@@ -279,6 +284,12 @@ header{
   }
   .next{
     .freelan{
+      &.border_blue{
+        border: solid 4px #2B59C3;
+        border-bottom: solid 1px #868686;
+        border-top: none;
+        border-radius: 0;
+      }
       p{
         padding-top: 26px;
         padding-bottom: 26px;

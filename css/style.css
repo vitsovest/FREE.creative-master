@@ -243,6 +243,11 @@ header i {
     border-bottom: none;
   }
 }
+.freelanc .freelan.border_blue {
+  border: solid 4px #2B59C3;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
 .freelanc .freelan h3 {
   color: #868686;
   font-size: 38px;
@@ -259,6 +264,12 @@ header i {
 }
 .freelanc .freelan.last {
   border-bottom: none;
+}
+.freelanc .next .freelan.border_blue {
+  border: solid 4px #2B59C3;
+  border-bottom: solid 1px #868686;
+  border-top: none;
+  border-radius: 0;
 }
 .freelanc .next .freelan p {
   padding-top: 26px;
