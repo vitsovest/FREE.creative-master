@@ -216,6 +216,69 @@ header i {
   margin-bottom: 10px;
 }
 
+.freelanc {
+  padding: 150px 0;
+}
+.freelanc .blue {
+  background-color: #2B59C3;
+  border-radius: 10px 10px 0 0;
+  font-size: 26px;
+  color: white;
+  display: flex;
+}
+.freelanc .blue p {
+  margin-bottom: 0;
+}
+.freelanc .blue.blue_2 {
+  border-radius: 0;
+}
+.freelanc .blue.blue_3 {
+  border-radius: 0 0 10px 10px;
+}
+.freelanc .freelan {
+  border-bottom: solid 1px #868686;
+}
+@media screen and (max-width: 992px) {
+  .freelanc .freelan {
+    border-bottom: none;
+  }
+}
+.freelanc .freelan h3 {
+  color: #868686;
+  font-size: 38px;
+  min-height: 84px;
+  line-height: 41px;
+}
+.freelanc .freelan p {
+  color: #868686;
+  padding-top: 14px;
+  font-size: 15px;
+  margin-bottom: 0;
+  line-height: 19px;
+  padding-bottom: 26px;
+}
+.freelanc .freelan.last {
+  border-bottom: none;
+}
+.freelanc .next .freelan p {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.freelanc .next .blue {
+  align-items: start;
+  padding-top: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .freelanc .next .blue {
+    padding-bottom: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .freelanc br {
+    display: none;
+  }
+}
+
 .guarantee {
   alignment: center;
   background-image: url("../images/Rectangle32.jpg");

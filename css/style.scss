@@ -1,6 +1,12 @@
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
 
+@mixin max-screen($res) {
+  @media screen  and (max-width: $res) {
+    @content;
+  }
+}
+
 @font-face {
   font-family: '20 Kopeek';
   src: url('../fonts/20Kopeek.eot');
@@ -227,6 +233,73 @@ header{
     margin-bottom: 10px;
   }
 }
+
+.freelanc{
+  padding: 150px 0;
+  //block with blue background
+  .blue{
+    background-color: #2B59C3;
+    border-radius: 10px 10px 0 0;  //top corners rounded
+    font-size: 26px;
+    color: white;
+    display: flex;
+    //align-items: center;
+    p{
+      margin-bottom: 0;
+    }
+    &.blue_2{                     //no corner rounded
+      border-radius: 0;
+    }
+    &.blue_3{
+      border-radius: 0 0 10px 10px; //bottom corners rounded
+    }
+  }
+  .freelan{
+    border-bottom: solid 1px #868686;   //underline
+    @include max-screen(992px){         //disable underline from this resolution
+      border-bottom: none;
+    }
+    h3{
+      color: #868686;
+      font-size: 38px;
+      min-height: 84px;
+      line-height: 41px;
+    }
+    p{
+      color: #868686;
+      padding-top: 14px;
+      font-size: 15px;
+      margin-bottom: 0;
+      line-height: 19px;
+      padding-bottom: 26px;
+    }
+    &.last{
+      border-bottom: none;              //disable underline in last block
+    }
+  }
+  .next{
+    .freelan{
+      p{
+        padding-top: 26px;
+        padding-bottom: 26px;
+      }
+    }
+    .blue{
+      align-items: start;
+      padding-top: 16px;
+      @include max-screen(1024px){
+        padding-bottom: 16px;
+      }
+    }
+  }
+  br{
+    @include max-screen(1024px){
+      display: none;
+    }
+  }
+}
+
+
 .guarantee{
   alignment: center;
   background-image: url("../images/Rectangle32.jpg");
