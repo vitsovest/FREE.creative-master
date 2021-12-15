@@ -237,72 +237,112 @@ header{
 .freelanc{
   padding: 150px 0;
   //block with blue background
-  .blue{
-    background-color: #2B59C3;
-    border-radius: 10px 10px 0 0;  //top corners rounded
-    font-size: 26px;
-    color: white;
-    display: flex;
-    //align-items: center;
-    p{
-      margin-bottom: 0;
+  .row_1, .row_next, .row_last{
+    .col-lg-2 {
+      &:first-of-type {
+        background-color: #2B59C3;
+        border-radius: 10px 10px 0 0; //top corners rounded
+        font-size: 26px;
+        color: white;
+        display: flex;
+        //align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
-    &.blue_2{                     //no corner rounded
-      border-radius: 0;
+
+    .col-md-4 {
+      &:nth-child(2), &:nth-child(3), &:last-of-type {
+        border-bottom: solid 1px #868686; //underline
+        @include max-screen(992px) { //disable underline from this resolution
+          border-bottom: none;
+        }
+
+        h3 {
+          color: #868686;
+          font-size: 38px;
+          min-height: 84px;
+          line-height: 41px;
+        }
+
+        p {
+          color: #868686;
+          padding-top: 14px;
+          font-size: 15px;
+          margin-bottom: 0;
+          line-height: 19px;
+          padding-bottom: 26px;
+        }
+      }
     }
-    &.blue_3{
-      border-radius: 0 0 10px 10px; //bottom corners rounded
+
+  }
+
+  .row_1{
+    .col-md-4{
+      &:nth-child(3){                 //blue border fot top central cell
+        border: solid 4px #2B59C3;
+        border-bottom: solid 1px #868686; //underline
+        border-radius: 10px 10px 0 0;
+      }
     }
   }
-  .freelan{
-    border-bottom: solid 1px #868686;   //underline
-    @include max-screen(992px){         //disable underline from this resolution
-      border-bottom: none;
+
+  .row_next{
+    .col-lg-2{
+      &:first-of-type{
+        border-radius: 0;             //no corners rounded at blue elements
+      }
     }
-    &.border_blue{                      //blue border about central vertical block
-      border: solid 4px #2B59C3;
-      border-bottom: none;
-      border-radius: 10px 10px 0 0;
-    }
-    h3{
-      color: #868686;
-      font-size: 38px;
-      min-height: 84px;
-      line-height: 41px;
-    }
-    p{
-      color: #868686;
-      padding-top: 14px;
-      font-size: 15px;
-      margin-bottom: 0;
-      line-height: 19px;
-      padding-bottom: 26px;
-    }
-    &.last{
-      border-bottom: none;              //disable underline in last block
-    }
-  }
-  .next{
-    .freelan{
-      &.border_blue{
+    .col-md-4{
+      &:nth-child(3){                 //blue vertical borders for inner cell
         border: solid 4px #2B59C3;
         border-bottom: solid 1px #868686;
         border-top: none;
         border-radius: 0;
       }
-      p{
-        padding-top: 26px;
-        padding-bottom: 26px;
+    }
+  }
+
+  .row_last{
+    .col-lg-2{
+      &:first-of-type{
+        border-radius: 0 0 10px 10px; //bottom corners rounded at blue element
       }
     }
-    .blue{
-      align-items: start;
-      padding-top: 16px;
-      @include max-screen(1024px){
-        padding-bottom: 16px;
+    .col-md-4{
+      &:nth-child(3){                     //blue border for central cell last row
+        border: solid 4px #2B59C3;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+      }
+      &:nth-child(2), &:last-of-type{
+        border-bottom: none;              //no border for last row cells
       }
     }
   }
+  //.next{
+  //  .freelan{
+  //    &.border_blue{
+  //      border: solid 4px #2B59C3;
+  //      border-bottom: solid 1px #868686;
+  //      border-top: none;
+  //      border-radius: 0;
+  //    }
+  //    p{
+  //      padding-top: 26px;
+  //      padding-bottom: 26px;
+  //    }
+  //  }
+  //  .blue{
+  //    align-items: start;
+  //    padding-top: 16px;
+  //    @include max-screen(1024px){
+  //      padding-bottom: 16px;
+  //    }
+  //  }
+  //}
   br{
     @include max-screen(1024px){
       display: none;
