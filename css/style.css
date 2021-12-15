@@ -154,19 +154,49 @@ header i {
   color: white !important;
 }
 
-.name_logo h3 {
+.name_logo h3, .name_logo span {
   font-size: 55px;
   line-height: 55px;
 }
-.name_logo span {
-  font-size: 55px;
-  line-height: 55px;
+@media screen and (max-width: 1199px) {
+  .name_logo h3, .name_logo span {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .name_logo h3, .name_logo span {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 .name_logo p {
   line-height: 25px;
   padding-top: 27px;
   font-size: 18px;
   line-height: 25px;
+}
+@media screen and (max-width: 1199px) {
+  .name_logo p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .name_logo p {
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .name_logo p {
+    font-size: 15px;
+    line-height: 21px;
+    padding-top: 13px;
+    padding-left: 68px;
+    max-width: 231px;
+  }
 }
 
 .portfolio article {
@@ -176,7 +206,42 @@ header i {
   margin-bottom: 20px;
 }
 .portfolio a {
-  border-radius: 1rem !important;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 15px 30px;
+  border-radius: 2rem !important;
+}
+.portfolio h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+@media screen and (max-width: 1199px) {
+  .portfolio h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+.portfolio p {
+  font-size: 18px;
+  line-height: 25px;
+}
+@media screen and (max-width: 1199px) {
+  .portfolio p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio p {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 .contact_email {
