@@ -239,12 +239,18 @@ header{
   //block with blue background
   .row_1, .row_next, .row_last{
     .col-lg-2 {
+      padding-top: 22px;
       &:first-of-type {
         background-color: #2B59C3;
         border-radius: 10px 10px 0 0; //top corners rounded
         font-size: 26px;
+        line-height: 28px;
         color: white;
         display: flex;
+        @include max-screen(1199px) {
+          font-size: 20px;
+          line-height: 22px;
+        }
         //align-items: center;
         p {
           margin-bottom: 0;
@@ -264,15 +270,24 @@ header{
           font-size: 38px;
           min-height: 84px;
           line-height: 41px;
+          margin-top: 14px;
+          @include max-screen(1199px) { //disable underline from this resolution
+            font-size: 34px;
+            line-height: 37px;
+          }
         }
 
         p {
-          color: #868686;
+          color: black;
           padding-top: 14px;
           font-size: 15px;
           margin-bottom: 0;
           line-height: 19px;
           padding-bottom: 26px;
+          @include max-screen(1199px) { //disable underline from this resolution
+            font-size: 14px;
+            line-height: 18px;
+          }
         }
       }
     }
