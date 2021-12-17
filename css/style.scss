@@ -419,7 +419,6 @@ header{
 
   span{
     margin-top: 0;
-    //margin-left: 0;
 
   }
   p{
@@ -430,55 +429,44 @@ header{
     top: 20px;
   }
 }
+/*END block Guarantee*/
 
+/*Contact Us block*/
 
-//.g_banner{
-//  position: relative;
-//  padding-top: 282px;
-//  padding-left: 285px;
-//  .g_text_banner{
-//    padding-top: 282px;
-//    position: absolute;
-//    top: 282px;
-//    left: 285px;
-//    width: 100%;
-//    z-index: 3;
-//  }
-//  .banner{
-//    max-height: 100vh;
-//
-//    background-size: cover;
-//    background-image: url("../images/Rectangle32.jpg");
-//  }
-//  h1{
-//    color: white;
-//  }
-//  .container{
-//    position: absolute;
-//    display: block;
-//    margin: auto;
-//    top: 282px;
-//    left: 285px;
-//    z-index: 3;
-//    width: 100%;
-//    color: white;
-//  }
-//  .leave_order{
-//    border-radius: 40px;
-//    height: 71px;
-//  }
-//  span{
-//    color: #181818;
-//    font-size: 55px;
-//    line-height: 55px;
-//    color: white;
-//  }
-//  p{
-//    line-height: 25px;
-//    padding-top: 27px;
-//  }
-//}
-/*END Guarantee block*/
+/*END contact us block*/
+
+.contact_us{
+  padding-top: 150px;
+
+  .col-lg-6{
+    p{
+      font-size: 38px;
+      line-height: 41px;
+    }
+    .contacts p{
+      font-size: 26px;
+      line-height: 28px;
+    }
+  .form-control{
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    height: 61px;
+    border-radius: 10px;
+  }
+  }
+  .form-check{
+    margin-left: 15px;
+    margin-top: 11px;
+    margin-bottom: 48px;
+  }
+  .btn{
+    margin-top: 21px;
+    border-radius: 40px;
+    height: 71px;
+    margin-bottom: 60px;
+  }
+}
 
 footer{
   .row{
