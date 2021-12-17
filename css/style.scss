@@ -384,27 +384,6 @@ header{
       }
     }
   }
-  //.next{
-  //  .freelan{
-  //    &.border_blue{
-  //      border: solid 4px #2B59C3;
-  //      border-bottom: solid 1px #868686;
-  //      border-top: none;
-  //      border-radius: 0;
-  //    }
-  //    p{
-  //      padding-top: 26px;
-  //      padding-bottom: 26px;
-  //    }
-  //  }
-  //  .blue{
-  //    align-items: start;
-  //    padding-top: 16px;
-  //    @include max-screen(1024px){
-  //      padding-bottom: 16px;
-  //    }
-  //  }
-  //}
   br{
     @include max-screen(1024px){
       display: none;
@@ -412,59 +391,94 @@ header{
   }
 }
 
-
+/*Guarantee block*/
 .guarantee{
-  alignment: center;
   background-image: url("../images/Rectangle32.jpg");
   background-size: cover;
-  background-position: center top;
-}
-.g_banner{
-  position: relative;
-  padding-top: 282px;
-  padding-left: 285px;
-  /*.g_text_banner{
-    /*padding-top: 282px;
-    position: absolute;
-    top: 282px;
-    left: 285px;
-    width: 100%;
-    z-index: 3;
-  }*/
-  .banner{
-    //max-height: 100vh;
+  background-repeat: no-repeat;
+  padding-bottom: 155px;
 
-    /*background-size: cover;
-    background-image: url("../images/Rectangle32.jpg");*/
-  }
-  h1{
+  h1, span{
     color: white;
-  }
-  .container{
-    position: absolute;
-    display: block;
-    margin: auto;
-    top: 282px;
-    left: 285px;
-    z-index: 3;
-    width: 100%;
-    color: white;
-  }
-  .leave_order{
-    border-radius: 40px;
-    height: 71px;
-  }
-  span{
-    color: #181818;
     font-size: 55px;
     line-height: 55px;
-    color: white;
+    padding: 0;
+    margin-top: 282px;
+    margin-left: 285px;
+    @include max-screen(1199px) { //disable underline from this resolution
+      font-size: 45px;
+      line-height: 45px;
+      margin-top: 97px;
+      margin-left: 47px;
+    }
+    @include max-screen(991px) { //disable underline from this resolution
+      margin-top: 32px;
+      margin-left: 43px;
+    }
+  }
+
+  span{
+    margin-top: 0;
+    //margin-left: 0;
+
   }
   p{
-    line-height: 25px;
-    padding-top: 27px;
+    color: white;
+    font-size: 10px;
+    line-height: 19px;
+    position: relative;
+    top: 20px;
   }
 }
+
+
+//.g_banner{
+//  position: relative;
+//  padding-top: 282px;
+//  padding-left: 285px;
+//  .g_text_banner{
+//    padding-top: 282px;
+//    position: absolute;
+//    top: 282px;
+//    left: 285px;
+//    width: 100%;
+//    z-index: 3;
+//  }
+//  .banner{
+//    max-height: 100vh;
+//
+//    background-size: cover;
+//    background-image: url("../images/Rectangle32.jpg");
+//  }
+//  h1{
+//    color: white;
+//  }
+//  .container{
+//    position: absolute;
+//    display: block;
+//    margin: auto;
+//    top: 282px;
+//    left: 285px;
+//    z-index: 3;
+//    width: 100%;
+//    color: white;
+//  }
+//  .leave_order{
+//    border-radius: 40px;
+//    height: 71px;
+//  }
+//  span{
+//    color: #181818;
+//    font-size: 55px;
+//    line-height: 55px;
+//    color: white;
+//  }
+//  p{
+//    line-height: 25px;
+//    padding-top: 27px;
+//  }
+//}
+/*END Guarantee block*/
 
 footer{
   .row{

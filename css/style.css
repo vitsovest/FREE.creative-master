@@ -370,58 +370,47 @@ header i {
   }
 }
 
+/*Guarantee block*/
 .guarantee {
-  alignment: center;
   background-image: url("../images/Rectangle32.jpg");
   background-size: cover;
-  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 155px;
 }
-
-.g_banner {
-  position: relative;
-  padding-top: 282px;
-  padding-left: 285px;
-  /*.g_text_banner{
-    /*padding-top: 282px;
-    position: absolute;
-    top: 282px;
-    left: 285px;
-    width: 100%;
-    z-index: 3;
-  }*/
-}
-.g_banner .banner {
-  /*background-size: cover;
-  background-image: url("../images/Rectangle32.jpg");*/
-}
-.g_banner h1 {
+.guarantee h1, .guarantee span {
   color: white;
-}
-.g_banner .container {
-  position: absolute;
-  display: block;
-  margin: auto;
-  top: 282px;
-  left: 285px;
-  z-index: 3;
-  width: 100%;
-  color: white;
-}
-.g_banner .leave_order {
-  border-radius: 40px;
-  height: 71px;
-}
-.g_banner span {
-  color: #181818;
   font-size: 55px;
   line-height: 55px;
-  color: white;
+  padding: 0;
+  margin-top: 282px;
+  margin-left: 285px;
 }
-.g_banner p {
-  line-height: 25px;
-  padding-top: 27px;
+@media screen and (max-width: 1199px) {
+  .guarantee h1, .guarantee span {
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 97px;
+    margin-left: 47px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .guarantee h1, .guarantee span {
+    margin-top: 32px;
+    margin-left: 43px;
+  }
+}
+.guarantee span {
+  margin-top: 0;
+}
+.guarantee p {
+  color: white;
+  font-size: 10px;
+  line-height: 19px;
+  position: relative;
+  top: 20px;
 }
 
+/*END Guarantee block*/
 footer .row {
   /*font size for blue blocks and copyright*/
   font-size: 18px;
